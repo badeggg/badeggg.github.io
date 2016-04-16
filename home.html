@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = 'urf-8'>
+  <link href = 'build/css/vernier-caliper.min.css' rel = 'stylesheet'>
+</head>
+<body>
+  <div id = 'result-container' class = 'width-center'>
+    <div id = 'resultModel' title = '隐藏结果'></div>
+    <div id = 'result'><span class = 'num'>0.0</span><span class = 'mm'> mm</span></div>
+  </div>
+  <main id = 'main-container'>
+    <div id = 'deep' class = 'layer' style = 'left: 0px;'></div>
+    <div id = 'vernier2' class = 'layer'></div>
+    <div id = 'main' class = 'layer'></div>
+    <div id = 'vernier1' class = 'layer'></div>
+    <div id = 'magnifier' style = 'left: 121px; top: 18px;'>
+      <img src = 'src/img/magnifier.png' id = 'magnifier-image'>
+      <canvas id = 'canvas'></canvas>
+    </div>
+  </main>
+  <script src = 'lib/require.js'></script>
+  <script src = 'build/js/vernier-caliper.min.js'></script>
+</body>
+</html>
