@@ -1,54 +1,34 @@
-﻿<!DOCTYPE html>
+﻿<!--2015/7/4 start-->
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset = 'urf-8'>
-  
-  <link href = 'build/css/vernier-caliper.min.css' rel = 'stylesheet'>
-  
-<!--   <link href = 'F:\github\vernier-caliper\src\css\main.css' rel = 'stylesheet'>
- -->  
+<meta charset = 'utf-8'>
+<link rel = 'stylesheet' type = 'text/css' href = 'css/layout.css'>
+<link rel = 'stylesheet' type = 'text/css' href = 'css/magicCube.css'>
+<link rel = 'stylesheet' type = 'text/css' href = 'css/font.css'>
 </head>
 <body>
-  <div id = 'result-container' class = 'width-center'>
-    <div>
-      <div id = 'resultModel' class = 'do-not-magnify' title = '隐藏结果'></div>
-      <div id = 'result' class = 'do-not-magnify'><span class = 'num'>0.0</span><span class = 'mm'> mm</span></div>
+<header>
+</header>
+<main>
+  <div id = 'setRank'>
+    <div class = 'set'>
+      <div></div>
+      <div contentEditable = 'true'>3</div>
+      <div></div>
+    </div><span class = 'rejectText'>Sorry, you should set a proper number.</span>
+    <div class = 'enterCon'>
+      <div class = 'enter'></div>
     </div>
   </div>
-  <main id = 'main-container'>
-    <div id = 'deep' class = 'layer' style = 'left: 0px;'></div>
-    <div id = 'vernier2' class = 'layer'></div>
-    <div id = 'main' class = 'layer'></div>
-    <div id = 'vernier1' class = 'layer'></div>
-    <div id = 'magnifier' style = 'left: 121px; top: 18px;'>
-      <img src = 'src/img/magnifier.png' id = 'magnifier-image'>
-      <canvas id = 'canvas'></canvas>
-    </div>
-    <div id = 'measure-box'></div>
-  </main>
-  <div id = 'teach-button'>
-    <hr><hr><hr>
-  </div>
-  <aside id = 'teach'>
-  </aside>
-  <div id = 'measure'>
-    <div>
-      <div stuffCon><img src = 'src/img/To_measure_120.png' width = '72px' draggable = 'true' id = 'measure120'></div>
-      <div stuffCon><img src = 'src/img/To_measure_123.png' width = '74px' draggable = 'true' id = 'measure123'></div>
-      <div stuffCon><img src = 'src/img/To_measure_112.png' width = '67px' draggable = 'true' id = 'measure112'></div>
-      <div answer-con = '120'>
-        <span >←</span><span>→</span><span answer = '120'>12.0</span>
-      </div>
-      <div answer-con = '123'>
-        <span >←</span><span>→</span><span answer = '123'>12.3</span>
-      </div>
-      <div answer-con = '112'>
-        <span >←</span><span>→</span><span answer = '112'>11.2</span>
-      </div>
-      <div table></div>
+  <div id = cubeContainer>
+    <div id = 'cube'>
     </div>
   </div>
-  <script src = 'lib/require.js'></script>
-  <script src = 'build/js/vernier-caliper.min.js'></script>
+  <div id = 'history'>
+  </div>
+</main>
+<div id = 'shade'></div>
+<script src = 'js/magicCube.js'></script>
 </body>
 </html>
